@@ -1,0 +1,447 @@
+body{
+    background-color: #111111;
+    font-family: Helvetica;
+}
+
+/* MENU */
+.navbar-toggler{
+    background-attachment: fixed;
+}
+
+#navbarNav{
+    font-size: 18px;
+}
+
+#navbarNav li:hover{
+    background-color: #dadada;
+    border-radius: 10px;
+}
+
+#menu{
+    border-bottom: 1px solid black;
+}
+
+/* PÁGINA HOME */
+.container-fluid .info{
+    text-align: center;
+    margin-top: 4%;
+    margin-bottom: 2%;
+}
+
+.btn.btn-primary{
+    background-color: #ff4e4e;
+    border: transparent;
+    box-shadow: #fc6d6d;
+    font-size: 18px;
+}
+
+.btn.btn-primary:hover{
+    background-color: #fff;
+    color: #fc6d6d;
+    box-shadow: #fc6d6d;
+}
+
+/* BANNER */
+.header-site{
+    background-image: url("../img/coding-gbfbe9bb6b_1920.jpg");
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    color: #fff;
+    padding-top: 300px;
+    margin-bottom: 5%;
+    height: 890px;
+}
+
+/* INFORMAÇÕES */
+
+/* Texto Animado */
+#informacao{
+    display: block;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    min-height: 80vh;
+    margin-top: 5%;
+}
+
+.container-fluid .estatico{
+    color: #fff;
+    font-size: 40px;
+    font-weight: 300;
+}
+
+.container-fluid .dinamico{
+    margin-left: 15px;
+    line-height: 90px;
+    height: 90px;
+    overflow: hidden;
+    margin-bottom: 3%;
+}
+
+.container-fluid .dinamico li{
+    color: #fc6d6d;
+    list-style: none;
+    font-size: 40px;
+    font-weight: 500;
+    left: 0;
+    position: relative;
+    top: 0;
+    animation: slide 6s steps(4) infinite;
+    
+}
+
+@keyframes slide{
+    100%{
+        top: -360px;
+    }
+}
+
+.dinamico li span::after{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 1%;
+    border-left: 2px solid #fc6d6d;
+    animation: typing 1.5s steps(10) infinite;
+    background: #111111;
+    
+}
+
+#informacao .dinamico li span{
+    position: relative;
+}
+
+@keyframes typing{
+    100%{
+        left: 100%;
+        margin: 0 -35px 0 35px;
+    }
+}
+
+/* Conteudo do Por que Nos Contratar */
+#informacao-conteudo{
+    display: flex;
+    color: #fff;
+    text-align: center;
+}
+
+#container-info{
+    display: flex;
+}
+
+.col-3{
+    right: 10px;
+    left: 10px;
+}
+
+.col-3:hover{
+    background: #2e2d2d;
+    border-radius: 10px;
+}
+
+hr{
+    color: white;
+}
+
+/* QUEM SOMOS NOS */
+#QuemSomosNos{
+    margin-top: 2%;
+    color: #fff;
+    min-height: 70vh;
+    text-align: center;
+}
+
+#QuemSomosNos h1{
+    margin-bottom: 1%;
+}
+
+#cont{
+    margin-bottom: 5%;
+    font-size: 17px;
+}
+
+.col-4{
+    left: 1%;
+}
+
+.col-4:hover{
+    background: #2e2d2d;
+    border-radius: 10px;
+}
+
+/* FAQ */
+.imagem{
+    color: #fff;
+    background-image: url("../img/faq.webp");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    margin-bottom: 5%;
+    height: 900px;
+    margin-bottom: -0.2%;
+}
+
+.imagem h1{
+    text-align: center;
+    margin-bottom: 2%;
+    margin-top: 3%;
+}
+
+.accordion-body{
+    color: #111111;
+}
+
+.accordion-button:hover{
+    color:#111111;
+}
+
+/* PÁGINA FALE CONOSCO */
+
+/* FORMULARIO */
+#termos{
+    background-color: #111111;
+}
+
+#title{
+    text-align: center;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    color: #fff;
+}
+
+form #nameEmail{
+    display: flex;
+}
+
+#input-name{
+    margin-right: 4%;
+    color: #fff;
+}
+
+#termos a{
+    text-decoration: none;
+    color: #fc6d6d;
+}
+
+#termos a:hover{
+    text-decoration: underline;
+}
+
+.btn.btn-primary{
+    width: auto;
+}
+
+#rodape-faleConosco{
+    margin-top: 6.5%;
+}
+
+label{
+    color: #111111;
+}
+
+#aceita{
+    color: #fff;
+}
+
+/* RODAPÉ */
+footer{
+    background-color: #FAFAFA;
+    height: 160px;
+    padding: 20px;
+}
+
+footer i{
+    font-size: 26px;
+    color: black;
+}
+
+#rodape{
+    text-align: center;
+}
+
+/* PAINEL LOGIN */
+#painel-login{
+    border: 2px #ff4e4e solid;
+    border-radius: 10px;
+    padding: 2%;
+    text-align: center;
+    margin: 5% 10%;
+}
+
+#painel-login h1{
+    color: #fff;
+    margin-bottom: 2%;
+}
+
+#painel-login button{
+    width: 100%;
+}
+
+/* Imagem Painel - Login */
+#img-painel{
+    width: 300px;
+    float: right;
+}
+
+/* Painel Menu */
+#painel-menu{
+    margin-left: 2px;
+}
+
+.painel_total{
+    display: flex;
+}
+
+#painel-conteudo{
+    border: 1px solid #fc6d6d;
+    border-radius: 10px;
+    margin-top: 6%;
+    padding: 1%;
+    margin-right: 1%;
+    margin-left: -0.6%;
+    text-align: center;
+}
+
+#painel-conteudo a{
+    text-decoration: none;
+}
+
+#painel-conteudo img{
+    width: 300px;
+    padding-top: 5%;
+}
+
+#painel-conteudo h3{
+    text-decoration: none;
+    color: #ffffff;
+    border-bottom: 1px solid #fc6d6d;
+}
+
+#painel-contrata{
+    border: 1px solid #fc6d6d;
+    margin-top: 5%;
+    border-radius: 10px;
+    margin-right: 2%;
+    text-align: center;
+}
+
+#painel-contrata a{
+    text-decoration: none;
+    color: #fff;
+}
+
+#painel-contrata h5{
+    color: #fff;
+    border-bottom: 2px #fc6d6d solid;
+}
+
+/* LISTAGEM CONTRATA */
+h3{
+    color: #fff;
+    text-align: center;
+    margin-top: 2%;
+}
+
+.bi.bi-x{
+    font-size: 20px;
+}
+
+.busca{
+    margin-left: 1%;
+}
+
+.busca h4{
+    color: #fff;
+    margin-top: 5%;
+}
+
+.btn.btn-primary{
+    margin-top: 2%;
+}
+
+.btn.btn-primary:hover{
+    background-color: #fff;
+    color: #fc6d6d;
+}
+
+@media(max-width: 750px){
+
+    /* BANNER */
+    .header-site{
+        background-image: url("../img/coding-gbfbe9bb6b_1920.jpg");
+        background-position: center top;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
+        color: #fff;
+        padding-top: 160px;
+        margin-bottom: 5%;
+        height: 560px;
+    }
+
+    #informacao-conteudo{
+        display: block;
+        margin-top: 6%;
+    }
+
+    .col-3{
+        width: 100%;
+        margin-bottom: 4%;
+    }
+
+    /* Quem Somos Nos */
+    #container-info{
+        display: block;
+        margin-top: 6%;
+    }
+
+    .col-4{
+        width: 100%;
+        margin-bottom: 6%;
+    }
+
+    /* Animação do Texto */
+    .container-fluid .dinamico li{
+        font-size: 25px;
+    }
+
+    /* FAQ */
+    .imagem h1{
+        margin-top: 10%;
+        margin-bottom: 10%;
+    }
+
+
+    #navbarNav{
+        text-align: center;
+        color: #fff;
+    }
+
+    #navbarNav:hover{
+        color: #fff;
+    }
+
+    #navbarNav li:hover{
+        background-color: #dadada;
+        border-radius: 10px;
+       
+    }
+
+    /* Login */
+    #img-painel{
+        display: none;
+    }
+    
+    #painel-login{
+        margin-top: 20%;
+    }
+    
+    .painel_total{
+        display: block;
+    }
+}
+
